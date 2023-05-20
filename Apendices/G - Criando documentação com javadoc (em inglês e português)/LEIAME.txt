@@ -1,0 +1,2 @@
+O apêndice G, Creating Documentation with javadoc, foi traduzido na 8ª edição
+de Java: como programar, e equivale ao apêndice M desta pasta.
