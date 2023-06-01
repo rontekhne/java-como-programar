@@ -23,13 +23,15 @@ public class SeparandoDigitos
 										}
 
 										int reversed = 0;
-
+								    
+										// inverte os digitos
 										while(n != 0) {
 														int digit = n % 10;
 														reversed = reversed * 10 + digit;
 														n /= 10;
 										}
-
+								    
+										// imprime os digitos invertidos separados por espaco
 										while(reversed != 0) {
 														int digit = reversed % 10;
 														System.out.printf("%d ", digit);
