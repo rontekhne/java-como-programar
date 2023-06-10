@@ -42,4 +42,11 @@ public class Account
     {
         return name; // retorna valor do nome para o chamador
     }
+
+    public static void displayAccount(Account accountToDisplay)
+    {
+        System.out.printf("%s balance: $%.2f%n", 
+                accountToDisplay.getName(), 
+                accountToDisplay.getBalance());
+    }
 } // fim da classe Account

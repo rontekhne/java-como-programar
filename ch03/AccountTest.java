@@ -15,10 +15,11 @@ public class AccountTest
         Account account2 = new Account("John Blue", -7.53);
 
         // exibe o valor inicial de cada objeto
-        System.out.printf("%s balance: $%.2f%n",account1.getName(), account1.getBalance());
-        System.out.printf("%s balance: $%.2f%n",account2.getName(), account2.getBalance());
+        //System.out.printf("%s balance: $%.2f%n",account1.getName(), account1.getBalance());
+        //System.out.printf("%s balance: $%.2f%n",account2.getName(), account2.getBalance());
+        Account.displayAccount(account1);
+        Account.displayAccount(account2);
 
-        
         System.out.print("Enter deposit amount for account1: ");
         double depositAmount = input.nextDouble(); 
         // String theName = input.nextLine(); // le uma linha de texto
@@ -30,8 +31,10 @@ public class AccountTest
         // exibe os saldos
         //System.out.printf("Name in object myAccount is: %n%s%n",
         //        myAccount.getName());
-        System.out.printf("%s balance: $%.2f%n",account1.getName(), account1.getBalance());
-        System.out.printf("%s balance: $%.2f%n",account2.getName(), account2.getBalance());
+        //System.out.printf("%s balance: $%.2f%n",account1.getName(), account1.getBalance());
+        //System.out.printf("%s balance: $%.2f%n",account2.getName(), account2.getBalance());
+        Account.displayAccount(account1);
+        Account.displayAccount(account2);
 
         System.out.print("Enter deposit amount for account2: ");
         depositAmount = input.nextDouble(); 
@@ -39,8 +42,10 @@ public class AccountTest
         account2.deposit(depositAmount); // adiciona o saldo de account1
         
         // exibe os saldos
-        System.out.printf("%s balance: $%.2f%n",account1.getName(), account1.getBalance());
-        System.out.printf("%s balance: $%.2f%n",account2.getName(), account2.getBalance());
+        //System.out.printf("%s balance: $%.2f%n",account1.getName(), account1.getBalance());
+        //System.out.printf("%s balance: $%.2f%n",account2.getName(), account2.getBalance());
+        Account.displayAccount(account1);
+        Account.displayAccount(account2);
 
     }
 } // fim da classe AccountTest
